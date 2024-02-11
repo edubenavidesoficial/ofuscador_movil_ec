@@ -1,8 +1,19 @@
 {
   "version": 2,
-  "dgSpecHash": "xUC6eNHykRAwCKlMghTEU4jid9mlzlWXgjIV1QoWQYiB9QZC/K20i5E5nFOLAngf165v+77Zg7aQeHLnsLGlNw==",
+  "dgSpecHash": "OkG8V5oSfIWuhi+u8GBKOR+wJgGFC7mg7Y4/osPAm8yIcnR8oKn99NzmrwltRz53Ut8Ktk5omYSoKpCV+/ELzA==",
   "success": true,
   "projectFilePath": "C:\\PROYECTOS DESARROLLO\\.NET\\ofuscador_movil_ec\\ofuscador_movil_ec.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.3.2\\microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.codeanalysis.common\\3.11.0\\microsoft.codeanalysis.common.3.11.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.codeanalysis.csharp\\3.11.0\\microsoft.codeanalysis.csharp.3.11.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.collections.immutable\\5.0.0\\system.collections.immutable.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.reflection.metadata\\5.0.0\\system.reflection.metadata.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.text.encoding.codepages\\4.5.1\\system.text.encoding.codepages.4.5.1.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
+  ],
   "logs": []
 }
