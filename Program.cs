@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Linq;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
@@ -66,7 +65,7 @@ class NombreVariableRewriter : CSharpSyntaxRewriter
     {
         // Asegurar que el nuevo nombre no sea una palabra clave de C# o un identificador existente
         while (SyntaxFactory.ParseToken(nuevoNombre).IsKind(SyntaxKind.None) ||
-               !originalToken.GetLocation().SourceTree.IsTrivia(SyntaxFactory.ParseToken(nuevoNombre).GetLocation().SourceSpan))
+               !originalToken.GetLocation().SourceTree.IsEquivalentTo(SyntaxFactory.ParseSyntaxTree("class C{}")))
         {
             nuevoNombre = nuevoNombre + "_";
         }
