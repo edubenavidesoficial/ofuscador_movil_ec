@@ -43,8 +43,39 @@ class NombreVariableRewriter : CSharpSyntaxRewriter
 
     public override SyntaxNode VisitVariableDeclarator(VariableDeclaratorSyntax nodo)
     {
-        // Cambiar el nombre de la variable
+        // Cambiar el nombre de la variable evitando conflictos de nombres
         var nuevoNombre = "variable" + contador++;
-        return nodo.WithIdentifier(SyntaxFactory.Identifier(nuevoNombre));
+
+        // Asegurar que el nuevo nombre no sea una palabra clave de C# o un identificador existente
+        nuevoNombre = SyntaxFactory.Identifier(nuevoNombre).EnsureUniqueName(this);
+
+        return nodo.WithIdentifier(nuevoNombre);
+    }
+
+    public override SyntaxNode VisitMethodDeclaration(MethodDeclarationSyntax nodo)
+    {
+        // Cambiar el nombre de los parámetros del método
+        var parametrosOfuscados = nodo.ParameterList.Parameters.Select(OfuscarNombreDeParametro).ToList();
+        var nuevaListaDeParametros = SyntaxFactory.ParameterList(SyntaxFactory.SeparatedList(parametrosOfuscados));
+        return nodo.WithParameterList(nuevaListaDeParametros);
+    }
+
+    private ParameterSyntax OfuscarNombreDeParametro(ParameterSyntax parametro)
+    {
+        var nuevoNombre = "cnb" + contador++;
+        nuevoNombre = SyntaxFactory.Identifier(nuevoNombre).EnsureUniqueName(this);
+        return parametro.WithIdentifier(SyntaxFactory.Identifier(nuevoNombre));
+    }
+}
+
+public static class SyntaxNodeExtensions
+{
+    public static SyntaxToken EnsureUniqueName(this SyntaxToken token, CSharpSyntaxRewriter reescritor)
+    {
+        while (reescritor.VisitToken(token).Text != token.Text)
+        {
+            token = SyntaxFactory.Identifier(token.Text + "_");
+        }
+        return token;
     }
 }
