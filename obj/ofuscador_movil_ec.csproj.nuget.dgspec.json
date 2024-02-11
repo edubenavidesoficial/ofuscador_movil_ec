@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\PROYECTOS DESARROLLO\\.NET\\Nueva carpeta\\ofuscador_movil_ec\\ofuscador_movil_ec.csproj": {}
+    "C:\\PROYECTOS DESARROLLO\\.NET\\ofuscador_movil_ec\\ofuscador_movil_ec.csproj": {}
   },
   "projects": {
-    "C:\\PROYECTOS DESARROLLO\\.NET\\Nueva carpeta\\ofuscador_movil_ec\\ofuscador_movil_ec.csproj": {
+    "C:\\PROYECTOS DESARROLLO\\.NET\\ofuscador_movil_ec\\ofuscador_movil_ec.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\PROYECTOS DESARROLLO\\.NET\\Nueva carpeta\\ofuscador_movil_ec\\ofuscador_movil_ec.csproj",
+        "projectUniqueName": "C:\\PROYECTOS DESARROLLO\\.NET\\ofuscador_movil_ec\\ofuscador_movil_ec.csproj",
         "projectName": "ofuscador_movil_ec",
-        "projectPath": "C:\\PROYECTOS DESARROLLO\\.NET\\Nueva carpeta\\ofuscador_movil_ec\\ofuscador_movil_ec.csproj",
+        "projectPath": "C:\\PROYECTOS DESARROLLO\\.NET\\ofuscador_movil_ec\\ofuscador_movil_ec.csproj",
         "packagesPath": "C:\\Users\\Dell\\.nuget\\packages\\",
-        "outputPath": "C:\\PROYECTOS DESARROLLO\\.NET\\Nueva carpeta\\ofuscador_movil_ec\\obj\\",
+        "outputPath": "C:\\PROYECTOS DESARROLLO\\.NET\\ofuscador_movil_ec\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
