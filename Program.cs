@@ -8,7 +8,7 @@ class Program
 {
     static void Main()
     {
-        string filePath = "C:/PROYECTOS DESARROLLO/.NET/ofuscador_movil_ec/Program.cs"; // Ruta del archivo C# que deseas ofuscar
+        string filePath = "C:/PROYECTOS DESARROLLO/.NET/ofuscador_movil_ec/ofuscador/Prueba.cs"; // Ruta del archivo C# que deseas ofuscar
         string codigoFuente = File.ReadAllText(filePath);
 
         // Crear un árbol de sintaxis desde el código fuente
@@ -22,7 +22,7 @@ class Program
 
         // Guardar el nuevo código fuente en un archivo (o realizar acciones adicionales según tus necesidades)
         string nuevoCodigoFuente = nuevoArbol.ToFullString();
-        File.WriteAllText("C:/PROYECTOS DESARROLLO/.NET/ofuscador_movil_ec/ArchivoOfuscado.cs", nuevoCodigoFuente);
+        File.WriteAllText("C:/PROYECTOS DESARROLLO/.NET/ofuscador_movil_ec/ofuscador/ArchivoOfuscado.cs", nuevoCodigoFuente);
 
         Console.WriteLine("Proceso de ofuscación completado.");
     }
