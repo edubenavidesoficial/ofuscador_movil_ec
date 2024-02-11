@@ -1,0 +1,15 @@
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\bin\Debug\net8.0\ofuscador_movil_ec.exe
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\bin\Debug\net8.0\ofuscador_movil_ec.deps.json
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\bin\Debug\net8.0\ofuscador_movil_ec.runtimeconfig.json
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\bin\Debug\net8.0\ofuscador_movil_ec.dll
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\bin\Debug\net8.0\ofuscador_movil_ec.pdb
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\obj\Debug\net8.0\ofuscador_movil_ec.GeneratedMSBuildEditorConfig.editorconfig
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\obj\Debug\net8.0\ofuscador_movil_ec.AssemblyInfoInputs.cache
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\obj\Debug\net8.0\ofuscador_movil_ec.AssemblyInfo.cs
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\obj\Debug\net8.0\ofuscador_movil_ec.csproj.CoreCompileInputs.cache
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\obj\Debug\net8.0\ofuscador_movil_ec.sourcelink.json
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\obj\Debug\net8.0\ofuscador_movil_ec.dll
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\obj\Debug\net8.0\refint\ofuscador_movil_ec.dll
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\obj\Debug\net8.0\ofuscador_movil_ec.pdb
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\obj\Debug\net8.0\ofuscador_movil_ec.genruntimeconfig.cache
+C:\PROYECTOS DESARROLLO\.NET\ofuscador_movil_ec\obj\Debug\net8.0\ref\ofuscador_movil_ec.dll

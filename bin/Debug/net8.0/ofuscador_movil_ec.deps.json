@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "ofuscador_movil_ec/1.0.0": {
+        "runtime": {
+          "ofuscador_movil_ec.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ofuscador_movil_ec/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
