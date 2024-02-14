@@ -4,13 +4,17 @@ using Microsoft.CodeAnalysis.CSharp.Syntax;
 
 namespace OfuscadorMovilEc.Services
 {
-    public class NombreVariableRewriter : CSharpSyntaxRewriter
+    public class Rewriter : CSharpSyntaxRewriter
     {
         private int contador;
+        private SemanticModel semanticModel;
+        private Compilation compilation;
 
-        public NombreVariableRewriter(int contador)
+        public Rewriter(int contador, SemanticModel semanticModel, Compilation compilation)
         {
             this.contador = contador;
+            this.semanticModel = semanticModel;
+            this.compilation = compilation;
         }
 
         public override SyntaxNode VisitVariableDeclarator(VariableDeclaratorSyntax nodo)
