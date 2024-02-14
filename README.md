@@ -1,4 +1,5 @@
 Proyecto de Seguridad Informática - Ofuscador para MAUI
+
 Introducción:
 Este proyecto tiene como objetivo desarrollar un ofuscador de código para aplicaciones móviles, específicamente diseñado para MAUI (Multi-platform App UI), un framework de Microsoft para crear aplicaciones móviles multiplataforma. La finalidad principal de esta herramienta es dificultar la lectura y comprensión del código fuente, mejorando así la seguridad y protegiendo la propiedad intelectual. Es esencial encontrar un equilibrio entre la seguridad y la usabilidad, ya que la ofuscación completa puede complicar el proceso de depuración y mantenimiento del software.
 
