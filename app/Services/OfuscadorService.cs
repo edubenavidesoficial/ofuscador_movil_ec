@@ -2,16 +2,23 @@ using Microsoft.CodeAnalysis;
 
 namespace OfuscadorMovilEc.Services
 {
-    public class OfuscadorService
+   public class OfuscadorService
+{
+    // Contador utilizado para lógica en la ofuscación
+    private readonly int contador;
+
+    // Constructor que recibe un contador, SemanticModel y Compilation
+    public OfuscadorService(int contador)
     {
-        private readonly int contador;
-        private readonly SemanticModel semanticModel;
-        private readonly Compilation compilation;
-
-        public OfuscadorService(int contador, SemanticModel semanticModel, Compilation compilation)
-            => (this.contador, this.semanticModel, this.compilation) = (contador, semanticModel, compilation);
-
-        public SyntaxNode OfuscarCodigo(SyntaxNode root)
-            => new Rewriter(contador, semanticModel, compilation).Visit(root);
+        this.contador = contador;
     }
+
+    // Método para ofuscar el código en un SyntaxNode dado
+    public SyntaxNode OfuscarCodigo(SyntaxNode root, SemanticModel semanticModel, Compilation compilation)
+    {
+        // Crea una nueva instancia de Rewriter y aplica la operación de ofuscación al SyntaxNode
+        return new Rewriter(contador, semanticModel, compilation).Visit(root);
+    }
+}
+
 }
