@@ -1,5 +1,4 @@
-﻿// Program.cs
-using System;
+﻿using System;
 using System.IO;
 using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
@@ -18,21 +17,29 @@ namespace OfuscadorMovilEc
             SyntaxTree syntaxTree = CSharpSyntaxTree.ParseText(codigoFuente);
             CompilationUnitSyntax root = syntaxTree.GetCompilationUnitRoot();
 
-            var compilation = CSharpCompilation.Create("MyCompilation")
-                .AddReferences(MetadataReference.CreateFromFile(typeof(object).Assembly.Location))
-                .AddSyntaxTrees(syntaxTree);
-
+            var compilation = CreateCompilation(syntaxTree);
             var semanticModel = compilation.GetSemanticModel(syntaxTree);
 
-            // Almacena instancias reutilizables de SemanticModel y Compilation
-            var ofuscadorService = new OfuscadorService(semanticModel, compilation);
+            // Pasa 'compilation' al constructor de OfuscadorService
+            var ofuscadorService = new OfuscadorService(0, semanticModel, compilation);
             SyntaxNode nuevoArbol = ofuscadorService.OfuscarCodigo(root);
 
-            string nuevoCodigoFuente = nuevoArbol.ToFullString();
-            File.WriteAllText("C:/PROYECTOS DESARROLLO/.NET/ofuscador/ArchivoOfuscado.cs", nuevoCodigoFuente);
+            GuardarCodigoOfuscado(nuevoArbol);
 
             Console.WriteLine("Proceso de ofuscación completado.");
         }
+
+        private static CSharpCompilation CreateCompilation(SyntaxTree syntaxTree)
+        {
+            return CSharpCompilation.Create("MyCompilation")
+                .AddReferences(MetadataReference.CreateFromFile(typeof(object).Assembly.Location))
+                .AddSyntaxTrees(syntaxTree);
+        }
+
+        private static void GuardarCodigoOfuscado(SyntaxNode nuevoArbol)
+        {
+            string nuevoCodigoFuente = nuevoArbol.ToFullString();
+            File.WriteAllText("C:/PROYECTOS DESARROLLO/.NET/ofuscador/ArchivoOfuscado.cs", nuevoCodigoFuente);
+        }
     }
 }
-

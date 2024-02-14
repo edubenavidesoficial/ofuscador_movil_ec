@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ofuscador_movil_ec")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+96d89b58d59944d7f379eb4c126c9ad075941e61")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+efe111035247570508aef1ad84bd453c026363f8")]
 [assembly: System.Reflection.AssemblyProductAttribute("ofuscador_movil_ec")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ofuscador_movil_ec")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

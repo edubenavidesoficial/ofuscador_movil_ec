@@ -4,22 +4,14 @@ namespace OfuscadorMovilEc.Services
 {
     public class OfuscadorService
     {
-        private int contador = 0;
-        private SemanticModel semanticModel;
-        private Compilation compilation;
+        private readonly int contador;
+        private readonly SemanticModel semanticModel;
+        private readonly Compilation compilation;
 
-        public OfuscadorService(SemanticModel semanticModel, Compilation compilation)
-        {
-            this.semanticModel = semanticModel;
-            this.compilation = compilation;
-        }
+        public OfuscadorService(int contador, SemanticModel semanticModel, Compilation compilation)
+            => (this.contador, this.semanticModel, this.compilation) = (contador, semanticModel, compilation);
 
         public SyntaxNode OfuscarCodigo(SyntaxNode root)
-        {
-            var reescritor = new Rewriter(contador, semanticModel, compilation);
-            SyntaxNode nuevoArbol = reescritor.Visit(root);
-
-            return nuevoArbol;
-        }
+            => new Rewriter(contador, semanticModel, compilation).Visit(root);
     }
 }
