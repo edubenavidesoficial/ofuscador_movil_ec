@@ -23,6 +23,6 @@ ________________________________________________________________________
 Maestría en Ingeniería en Tecnologías de la Información
 _________________________________________________________________________
 
-Este proyecto se presenta como parte del proceso de obtención de la Maestría en Ingeniería en Tecnologías de la Información de la Universidad Internacional de México (IEXE) para el alumno Eduardo Benavides. 
+Este proyecto se presenta como parte del proceso de obtención de la Maestría en Ingeniería en Tecnologías de la Información de la Universidad Internacional de México (IEXE) para el alumno Luis Eduardo Benavides. 
 
 La iniciativa busca fortalecer las habilidades en seguridad informática y aplicación de tecnologías avanzadas en el ámbito de la ingeniería de software.
