@@ -1,23 +1,28 @@
-# ofuscador_movil_ec
-Ofuscador de código para aplicaciones móviles, específicamente para MAUI (Multi-platform App UI), que es un framework de Microsoft para crear aplicaciones móviles multiplataforma.
+Proyecto de Seguridad Informática - Ofuscador para MAUI
+Introducción:
+Este proyecto tiene como objetivo desarrollar un ofuscador de código para aplicaciones móviles, específicamente diseñado para MAUI (Multi-platform App UI), un framework de Microsoft para crear aplicaciones móviles multiplataforma. La finalidad principal de esta herramienta es dificultar la lectura y comprensión del código fuente, mejorando así la seguridad y protegiendo la propiedad intelectual. Es esencial encontrar un equilibrio entre la seguridad y la usabilidad, ya que la ofuscación completa puede complicar el proceso de depuración y mantenimiento del software.
 
-El objetivo principal de un ofuscador de código es dificultar la lectura y comprensión del código fuente, lo que puede ayudar a proteger la propiedad intelectual y mejorar la seguridad de la aplicación. Sin embargo, ten en cuenta que la ofuscación completa del código puede dificultar el proceso de depuración y mantenimiento del software, por lo que es importante equilibrar la seguridad con la usabilidad.
-
+Proyecto:
 
 Investigación y Comprensión de MAUI:
-Antes de comenzar, asegúrate de tener un buen entendimiento del framework MAUI y cómo funciona internamente. Esto te permitirá identificar las áreas del código que pueden ser ofuscadas de manera segura sin afectar la funcionalidad.
-
-Herramientas de Ofuscación:
-Parto de Dotfuscator para adaptarse a las necesidades específicas de MAUI.
+Antes de comenzar, es crucial adquirir un profundo entendimiento del framework MAUI y su funcionamiento interno. Esto permitirá identificar áreas del código que pueden ofuscarse sin afectar la funcionalidad.
 
 Configuración de Reglas de Ofuscación:
-Configura reglas de ofuscación para las partes críticas del código que deseas proteger. Esto puede incluir nombres de clases, métodos, variables, y otros elementos del código. Ajusta las reglas según tus necesidades y asegúrate de no ofuscar componentes que podrían afectar negativamente la funcionalidad.
+Configurar reglas de ofuscación para partes críticas del código, como nombres de clases, métodos y variables. Ajustar las reglas según sea necesario, evitando ofuscar componentes que puedan impactar negativamente la funcionalidad.
 
 Integración en el Proceso de Compilación:
-Integra la herramienta de ofuscación en el proceso de compilación de tu aplicación MAUI. Esto garantizará que la ofuscación se aplique automáticamente cada vez que construyas tu aplicación.
+Integrar la herramienta de ofuscación en el proceso de compilación de la aplicación MAUI. Esto asegurará que la ofuscación se aplique automáticamente en cada construcción de la aplicación.
 
 Pruebas Rigurosas:
-Después de aplicar la ofuscación, realiza pruebas exhaustivas en tu aplicación para asegurarte de que la funcionalidad no se vea afectada. Las herramientas de ofuscación a veces pueden introducir errores, por lo que es crucial probar de manera exhaustiva.
+Realizar pruebas exhaustivas después de aplicar la ofuscación para garantizar que la funcionalidad no se vea afectada. Las herramientas de ofuscación pueden introducir errores, por lo que la fase de pruebas es crucial.
 
 Monitoreo y Mantenimiento:
-Mantén un monitoreo continuo sobre las actualizaciones de MAUI y de las herramientas de ofuscación que estás utilizando. Actualiza tu proceso de ofuscación y realiza ajustes según sea necesario para adaptarte a los cambios.
+Mantener un monitoreo continuo sobre las actualizaciones de MAUI y las herramientas de ofuscación utilizadas. Actualizar el proceso de ofuscación y realizar ajustes según sea necesario para adaptarse a los cambios.
+
+________________________________________________________________________
+Maestría en Ingeniería en Tecnologías de la Información
+_________________________________________________________________________
+
+Este proyecto se presenta como parte del proceso de obtención de la Maestría en Ingeniería en Tecnologías de la Información de la Universidad Internacional de México (IEXE) para el alumno Eduardo Benavides. 
+
+La iniciativa busca fortalecer las habilidades en seguridad informática y aplicación de tecnologías avanzadas en el ámbito de la ingeniería de software.
